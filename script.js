@@ -349,8 +349,6 @@ function loadMenu(category) {
     const card = `
       <div class="menu-card">
         <img src="${item.image.replace('images/','')}" alt="${item.title}">
-        onerror="this.onerror=null:"
-        this.src='bbq.jpg':"
         
         <div class="menu-content">
           <h3>${item.title}</h3>
