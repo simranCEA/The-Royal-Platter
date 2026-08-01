@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Platter | Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><i class="fas fa-crown"></i> The Royal Platter</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Taste of royalty</h1>
+            <p>Experience culinary excellence fit for kings and queens.</p>
+            <a href="#reservation" class="btn">Book a Table</a>
+        </div>
+    </header>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Royal Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="royal"><i class="fa-solid fa-crown"></i>Royal Beginnings</button>
+                <button class="tab-btn" data-category="feast"><i class="fa-solid fa-drumstick-bite"></i>Feast of Kings</button>
+                <button class="tab-btn" data-category="sweet"><i class="fa-solid fa-cake-candles"></i>Sweet Kingdom</button>
+                <button class="tab-btn" data-category="liquid"><i class="fa-solid fa-champagne-glasses"></i>Liquid Luxury</button>
+                <button class="tab-btn" data-category="garden"><i class="fa-solid fa-seedling"></i>Garden of Royals</button>
+                <button class="tab-btn" data-category="burger"><i class="fa-solid fa-burger"></i>Burger Empire</button>  
+                <button class="tab-btn" data-category="combos"><i class="fa-solid fa-box-open"></i>Combos</button>
+                <button class="tab-btn" data-category="snacks"><i class="fa-solid fa-cookie-bite"></i>Snacks</button>
+                <button class="tab-btn" data-category="morning"><i class="fa-solid fa-mug-hot"></i>Morning Majesty</button>
+                <button class="tab-btn" data-category="signature"><i class="fa-solid fa-star"></i>Signature Items</button>
+                <button class="tab-btn" data-category="kids"><i class="fa-solid fa-child"></i>Kids Menu</button>
+                <button class="tab-btn" data-category="pizza"><i class="fa-solid fa-pizza-slice"></i>Pizza Palace</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="menu-grid" id="menu-container">
+                </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">The Experience</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200" alt="The Experience" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200" alt="Our Delicious Item" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200" alt="Ambiance" loading="lazy">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">Reserve Your Seat</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="4">4 People</option>
+                        <option value="6">6 People</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-submit">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>The Royal Platter</h3>
+                <p>123 King's Avenue, London, UK</p>
+                <p>+44 20 7946 0000</p>
+            </div>
+            <div class="footer-col">
+                <h3>Hours</h3>
+                <p>Mon-Sun: 5pm - 7pm</p>
+            </div>
+            <div class="footer-col social-links">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 The Royal Platter. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
